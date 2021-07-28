@@ -1,0 +1,18 @@
+-base model = keras.applications.DenseNet201
+-GlobalAveragePooling2D layer added on top of the DenseNet and then mapped to the output classes with a final Dense layer
+-Trained for 100 epochs
+-optimizer = 'adam'
+
+-Image Augmentation Applied to training data:
+
+	width_shift_range=0.4,
+   	horizontal_flip=True,
+    	zoom_range=0.4,
+    	shear_range=0.4
+
+-Performance Metrics:
+
+Validation Accuracy: 0.8963
+Log-Loss: 0.3154
+Macro F1-score: 0.90
+Micro F1-score: 0.90
